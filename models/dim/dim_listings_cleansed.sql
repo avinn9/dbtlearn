@@ -9,4 +9,4 @@ select
     replace(price_str, '$', '')::number(10, 2) as price,
     created_at,
     updated_at
-from airbnb.dev.src_listings
+from src_listings

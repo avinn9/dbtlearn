@@ -43,3 +43,9 @@ models:
     # Applies to all files under models/example/
     dim:
       +materialized: table
+      +schema: DIM
+    src:
+      +materialized: view
+      +schema : SRC
+    fct:
+      +schema: FACT
