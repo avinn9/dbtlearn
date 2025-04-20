@@ -1,3 +1,41 @@
 {
-    "dbt.dbtIntegration": "cloud"
+    "dbt.dbtIntegration": "cloud",
+    "sqltools.connections": [
+        {
+            "authenticator": "SNOWFLAKE",
+            "ocspOptions": {
+                "ocspFailOpen": true
+            },
+            "snowflakeOptions": {
+                "clientSessionKeepAlive": true,
+                "clientSessionKeepAliveHeartbeatFrequency": 3600
+            },
+            "previewLimit": 50,
+            "driver": "Snowflake",
+            "name": "myflake",
+            "account": "idevfgs-yo79012",
+            "username": "avinn9",
+            "password": "LWPJD4V8h1foeQKX",
+            "database": "airbnb",
+            "warehouse": "compute_wh"
+        },
+        {
+            "authenticator": "SNOWFLAKE",
+            "ocspOptions": {
+                "ocspFailOpen": true
+            },
+            "snowflakeOptions": {
+                "clientSessionKeepAlive": true,
+                "clientSessionKeepAliveHeartbeatFrequency": 3600
+            },
+            "previewLimit": 50,
+            "driver": "Snowflake",
+            "name": "snow",
+            "account": "idevfgs-yo79012",
+            "password": "LWPJD4V8h1foeQKX",
+            "username": "avinn9",
+            "database": "airbnb",
+            "warehouse": "compute_wh"
+        }
+    ]
 }
